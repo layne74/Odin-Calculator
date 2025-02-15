@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@600&display=swap');
 :root {
     --crimson-color: rgba(160,28,80);
     --screen-color: rgba(1,159,66);
     --screen--text-color: rgba(3,99,54);
     --purple-text-color: rgba(103,79,147);
     --body-bg-color: rgb(221, 220, 214);
+}
+
+body {
+    background-color: rgb(238, 238, 238);
 }
 
 .container {
@@ -17,9 +22,11 @@
     background-color: var(--body-bg-color);
     padding: 10px;
     border-radius: 5px;
+    box-shadow: 4px 3px 10px 0px rgba(0, 0, 0, 0.336);
 }
 
 #screen {
+    font-family: Handjet;
     border-radius: 5px;
     border: 1px solid rgba(0, 0, 0, 0.288);
     background: rgb(1,159,66);
@@ -57,10 +64,12 @@
 
 #line {
     border-top: 2px solid var(--purple-text-color);
+    border-bottom: 1px solid var(--purple-text-color);
     height: fit-content;
     align-self: center;
     flex-grow: 1;
     opacity: 80%;
+    height: 1px;
     
 }
 

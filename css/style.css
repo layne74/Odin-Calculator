@@ -87,11 +87,11 @@
     background-color: rgb(235, 235, 235);
 }
 
-.operator {
+.darker {
     background-color: rgb(202, 199, 193);
 }
 
-.operation {
+.very-dark {
     background-color: rgba(109,84,91,255);
     color: rgba(255, 255, 255, 0.644);
 }

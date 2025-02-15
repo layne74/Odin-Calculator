@@ -47,12 +47,16 @@ function populateDisplay(params) {
 function numberPress(num) {
     // If this is the first number
     if (!operand) {
+        // prevents multiple decimals
+        if (num == "." && firstNum.includes(".")) return;
         firstNum.length < 9 ? firstNum += num : null;
         populateDisplay(firstNum)
     }
 
     // if there is a first number and operand chosen
     if (operand && firstNum) {
+        // prevents multiple decimals
+        if (num == "." && secondNum.includes(".")) return;
         secondNum.length < 9 ? secondNum += num : null;
         populateDisplay(secondNum)
     }

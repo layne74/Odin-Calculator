@@ -9,6 +9,11 @@ My task for the final calculator assignment for [The Odin Project](https://www.t
 ![Logo](https://www.skillfinder.com.au/media/wysiwyg/the-odin-project-logo-skill-finder-partners-page.png 'The Odin Project')
 
 ---
+<br>
+<p align="center">
+  <img src="./assets/Screenshot from 2025-02-15 19-50-37.png" width="200"/>
+</p>
+<br>
 
 ## Deployment
 

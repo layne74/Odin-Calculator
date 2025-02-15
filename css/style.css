@@ -1,0 +1,106 @@
+:root {
+    --crimson-color: rgba(160,28,80);
+    --screen-color: rgba(1,159,66);
+    --screen--text-color: rgba(3,99,54);
+    --purple-text-color: rgba(103,79,147);
+    --body-bg-color: rgb(221, 220, 214);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: repeat(6, 1fr);
+    width: fit-content;
+    margin: auto;
+    row-gap: 1px;
+    column-gap: 1px;
+    background-color: var(--body-bg-color);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#screen {
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.288);
+    background: rgb(1,159,66);
+    background: radial-gradient(
+        circle, 
+        rgba(1,159,66,1) 0%, 
+        rgba(1,159,66,1) 61%, 
+        rgba(3,143,61,1) 100%
+    );
+    color: var(--screen--text-color);
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    font-size: 3rem;
+    padding: 5px;
+}
+
+#body-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+    grid-column-start: 1;
+    grid-column-end: 5;
+    color: var(--purple-text-color);
+    font-size: 0.6rem;
+    font-weight: bold;
+    padding-top: 5px;
+    display: flex;
+    gap: 7px;
+}
+
+#line {
+    border-top: 2px solid var(--purple-text-color);
+    height: fit-content;
+    align-self: center;
+    flex-grow: 1;
+    opacity: 80%;
+    
+}
+
+.button {
+    border: 1px solid rgba(0, 0, 0, 0.116);
+    border-radius: 5px;
+    width: 55px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.651);
+}
+
+.zero {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: auto;
+}
+
+.number {
+    background-color: rgb(235, 235, 235);
+}
+
+.operator {
+    background-color: rgb(202, 199, 193);
+}
+
+.operation {
+    background-color: rgba(109,84,91,255);
+    color: rgba(255, 255, 255, 0.644);
+}
+
+#clear {
+    background-color: rgb(238, 139, 139);
+}
+
+.button:hover {
+    filter: opacity(80%);
+    cursor: pointer;
+}
